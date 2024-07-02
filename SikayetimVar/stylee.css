@@ -1,0 +1,185 @@
+style.css
+{/*  Poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+}
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    
+}
+
+section {
+    position: relative;
+    height: 600px;
+    width:1000px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
+    width: 950px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 2px;
+    margin: 3px;
+    box-shadow: 0 5px 10px rgba(95, 32, 32, 0.1);
+  
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: #a49096;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    z-index: 20;
+}
+
+section .card .image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #242224;
+}
+
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(9, 34, 20);
+}
+
+.card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .media-icons i {
+    color: white;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .media-icons i:hover {
+    opacity: 1;
+}
+
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: aquamarine;
+}
+
+.name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 255, 242);
+}
+
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    color: chartreuse;
+}
+
+.card .rating i {
+    font-size: 15px;
+    margin: 0 2px;
+    color: #51ff00;
+}
+
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card .button button {
+    background: #006eff;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background: #80cf00;
+}
+
+.swiper-pagination {
+    position:absolute;
+}
+
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #006eff;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    opacity: 0.7;
+    color: #bfff00;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+.altdiv1{ 
+    color: rgb(38, 0, 255);
+    margin-top: 1px;
+    padding: 5px;
+
+}
+.back{
+    background-image: url(kkk.jpg);
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>şikayet listele</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Swiper's -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+     <!-- Fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+     <link rel="stylesheet" href="style.css">
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+     <style>
+
+
+
+body{
+    height: 800px;
+    background: url(foto3.jpg);
+    background-size: 100% 100%;
+    
+   background-image: url(kkk.jpg);
+    align-items: center center;
+}
+
+.ortaenust {
+    width: 100%;
+    height: 130px;
+    text-align: 1000px;
+    background-color:rgb(216, 222, 208);
+    padding-left: 80px;
+
+     
+    
+}
+.menu img{
+    height: 70px;
+    width: 100px;
+    float:left;
+    border: solid 5px;
+    border-color: gray;
+    border-radius: 100%;
+ 
+
+}
+.logo:hover{
+     width: 120px;
+     height: 120px;
+}
+.menu {
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-top: 10px;
+    overflow:hidden;
+    background-color:white;
+    border-color: black;
+    border: solid 4px;
+    border-color: black;
+    border-radius: 25px;
+    margin-left: 150px;
+    width:1350px;
+    position:fixed;
+    color:white;
+    box-shadow: 2px 25px 10px rgb(46, 42, 42);
+    z-index: 100;
+}
+.menu li{
+    float:left;
+    border:10px solid #999;
+    border-color:whitesmoke;
+    
+}
+    .menu li a {
+        width: 100;
+        padding: 12px 12px;
+        display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        border: solid 5px;
+        border-radius: 15px;
+        border-color: gray;
+    }
+.aktif{
+    background-color:black;
+    color:white;
+}
+.menu li a:hover {
+    background-color: black;
+    border: 6px solid;
+    border-color:yellow;
+   color: white;
+}
+
+
+.profilecard{
+    margin-left: 10px;
+    margin-top: 160px;
+    width: 600px;
+    height: 900px;
+    text-align: center;
+    border-radius: 8px;
+}
+.cardheader{
+    background: bisque;
+    padding:60px;
+}
+.picture img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+.picture{
+    display: inline-block;
+    padding:8;
+    background: chocolate;
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+@keyframes animasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{ background-position: right top;
+    }
+   100%{ background-position: left top;
+    }
+    
+}
+.name{
+    color: rgb(105, 105, 33);
+    font-size: 5px;
+    font-weight: 50;
+    margin: 3px;
+    margin-top: 8px;
+
+}
+.aciklama{
+    font-size: 18px;
+    color: brown;
+    margin-top: 30px;
+
+}
+.ikon{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    margin-top: 22px;
+}
+.ikon a{
+    color: blue;
+    width: 56px;
+    font-size: 32px;
+}
+.ikon a:hover{
+     color: blueviolet;
+}
+.contact-btn{
+    padding: 12px 50px;
+    display: inline-block;
+    color: rgb(233, 5, 233);
+    border: 2px solid #f2f2f2;
+    background-color:bisque;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.contact-btn:hover{
+    background: rgb(2, 95, 95);
+    color: aliceblue;
+}
+.şikayet{
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+    background-color: bisque;
+    padding: 60px 10px;
+    margin-left:500px;
+    margin-top: -850px;
+}
+.numbers{
+    display:flex;
+    align-items:center;
+}
+.item{
+    flex: 1;
+    font-size: 35px;
+    text-align:justify;
+
+}
+.bas{
+    margin-top: -450px;
+    
+    
+}
+
+#myForm{
+    margin-left: 50px;
+    margin-top: -45px;
+}
+
+.yazii{
+    color: blue;
+    
+
+}
+
+#myForm input{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 12px;
+    overflow: hidden;
+   
+}
+
+#list{
+    margin-top: -50px;
+    background-color: rgb(77, 92, 92);
+    width: 100%;
+    height: 53%;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    color: rgb(250, 234, 10);
+    padding: 21px;
+}
+
+
+
+
+
+
+
+section {
+    position: relative;
+    height: 550px;
+    width:1500x;
+    display: flex;
+    align-items: center-center;
+    margin-left: 100px;
+    margin-bottom: -150px;
+    margin-top: 1px;
+    list-style: none;
+}
+
+.swiper {
+    width: 1250px;
+    height: 490px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: 0 5px 10px rgba(206, 24, 24, 0.1);
+   
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    background: #1dc14b;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+section .card .image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #ff00bb;
+}
+
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(113, 122, 16);
+}
+
+.card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .media-icons i {
+    color: white;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .media-icons i:hover {
+    opacity: 1;
+}
+
+.card .name-profession {
+ 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(18, 21, 20);
+}
+
+.name-profession .profession {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(240, 112, 8);
+    
+}
+
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(183, 191, 178);
+    margin-top: 0px;
+    
+}
+
+ #dolu {
+    font-size: 15px;
+    margin: 0 2px;
+    color: #51ff00;
+}
+.card .rating i #boş {
+    font-size: 15px;
+    margin: 0 2px;
+    color: #1f211f;
+}
+
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-top: 2%;
+}
+
+.card .button button {
+    background: #3b210b;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 6px 22px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+   
+}
+
+.button button:hover {
+    background: #2c0608;
+
+}
+
+.swiper-pagination {
+    position: absolute;
+}
+
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #006eff;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    opacity: 0.7;
+    color: #22e722;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+.altdiv1{ 
+    color: rgb(7, 7, 7);
+    margin-top: 20px;
+    padding: 3px;
+
+}
+
+
+
+
+     </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-warning bg-warning w-100 navbar-expand-sm" style="margin-top: -8px;">
+            <div class="container">
+                <ul class="navbar-nav">
+                 <li class="nav-item"><a href="index.html" class="btn btn-outline-dark btn-sm ms-1">Anasayfa</a></li>
+                         <li class="nav-item"><a href="iletisim.html"class="btn btn-outline-dark btn-sm ms-1">iletişim</a></li>
+                         <li class="nav-item"><a href="sikayeteklee.html"class="btn btn-outline-dark btn-sm ms-1">Güncel şikayetler</a></li>
+                         <li class="nav-item"><a href="oran1.html"class="btn btn-outline-dark btn-sm ms-1">istatistik</a></li>
+                         <li class="nav-item"><a href="hakkimizda.html"class="btn btn-outline-dark btn-sm ms-1">Hakkımızda</a></li>
+                 </ul>
+                 <div class="soru text-center text-danger"> <h4>SORU'N İŞARETİ</h4></div>
+                 <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <div class="input-group">
+                             <input type="text" placeholder="Arama" class="form-control form-control-sm">
+                             <a href="index.html" class="btn btn-outline-dark btn-sm">Ara</a>
+                         </div>
+                     </li>
+                     <li class="nav-item">
+                         <div class="btn-group ms-1">
+                            <a href="yenigirişyap.html" class="btn btn-outline-dark btn-sm"> yeni yerel giriş</a> 
+                            <a href="kurumgiris.html" class="btn btn-outline-dark btn-sm">Kurum giriş</a>  
+                           <a href="Kayıtol.html" class="btn btn-outline-dark btn-sm">kayıt ol</a> 
+                         </div>
+                     </li>
+                 </ul>
+              </div>
+          </nav>
+       </div>
+
+ 
+       <div id="enust" >
+        <h5 style="text-align: center; margin-top: 18px; color:white;">---------- TEKRAR HOŞ GELDİN RAHİM  ----------</h5>
+         <section>
+           <div class="swiper customSwiper container">
+               <div class="swiper-wrapper content">
+                  
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt <br> <br> 25.07.2022</span>
+                               <span class="profession">papara</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="boş" class="fas fa-star"></i>
+                               <i id="boş" class="fas fa-star"></i>
+                              
+                           </div>
+       
+                          
+                           <div class="altdiv1"> Kendi isteğim ile kapattırmış olduğum Papara hesabımı açtırmak için 
+                            mail atıyorum günlerdir 3-4 kez mailen ufak bir geri dönüş olmadı</div>
+       
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt  <br> <br> 15.01.2022   </span>
+                               <span class="profession">Akbank</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                         
+                           <div class="altdiv1">Akbank kart şifresi bloke olduktan sonra bir türlü düzelmedi. Şubeye
+                             gitmeme rağmen mobil için şifre al dediler. Yinede hata veriliyor. 15 defa </div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                          
+       
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt<br> <br> 02.11.2022</span>
+                               <span class="profession">Exxen</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                           
+                           <div class="altdiv1"> Hesabıma bilgisayardan ve telefondan giriş yapmama
+                             rağmen, üyelik iptali y
+                            apamıyorum. Üyelik iptal seçeneği bulunmuyor ve kullanmadığım halde her.</div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt <br> <br> 10.09.2022</span>
+                               <span class="profession">milli Piyango</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                           </div>
+       
+                          
+                           <div class="altdiv1"> Milli Piyango online üzerinden 250 TL lik 5 adet çeyrek bilet satın aldım.
+                             Paramı çektiler. Ancak biletler sistemde görünmüyor. Ayıptır. Yeter artık </div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt<br> <br> 14.03.2021</span>
+                               <span class="profession">genciz biz</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                           
+                           <div class="altdiv1">Gencizbiz uygulaması ile sıkıntı yaşıyorum ki birkaç gündür yurt nakil i
+                            şlemleri için, nakil denediğimde beklenemeyen bir hata veriyor</div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                           
+                       </div>
+                   </div>
+                  <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt <br> <br> 11.01.2019</span>
+                               <span class="profession">Telegram</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                          
+                           <div class="altdiv1"> Telegram'a giriş yapmak için Ülke olarak Türkiye'yi seçiyorum,
+                             telefon numaramı yazdığımda  cuba ülkesine
+                             geçiş yapılıyor, büyük ihtimalle telefon numaramı alıp hesap açmışlar,</div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt<br> <br> 30.01.2019</span>
+                               <span class="profession">Stok Kargo
+                               </span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                          
+                           <div class="altdiv1"> Gerçekte olmayan hayali online satış sitesi. Bu site ürünleri
+                             ucuz sattığını iddia ederek sitenin 
+                            trafiğini artırmayı amaçlayarak sitesine reklam alıyor ve bu  </div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                           
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt <br> <br> 25.10.2022</span>
+                               <span class="profession">show</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                           
+                           <div class="altdiv1"> G televizyonumuz var tüm kanallar var sadece Show TV yok tüm frekans manuel ve otomatik 
+                            olarak seçmeye çalıştım Show Türk Show HD hiçbiri açılmıyor kafasına eserse bazen geliyor</div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="swiper-slide card">
+                       <div class="card-content">
+                           <div class="image">
+                               <img src="1648134575217.jpeg" alt="" width="100">
+                           </div>
+       
+                           <div class="media-icons">
+                               <i class="fab fa-facebook"></i>
+                               <i class="fab fa-twitter"></i>
+                               <i class="fab fa-github"></i>
+                           </div>
+       
+                           <div class="name-profession">
+                               <span class="name">Rahim Kurt<br> <br> 09.06.2022</span>
+                               <span class="profession">Discord</span>
+                           </div>
+       
+                           <div class="rating">
+                               <i id="dolu" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i id="" class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                           </div>
+       
+                          
+                           <div class="altdiv1">  var tüm kanallar vyok tüm frekans manuel ve otomatik olarak seçmeye
+                             çalıştım Show Türk hiçbiri açılmıyor kafasına eserse bazen geliyor</div>
+                           <div class="button">
+                               <button class="aboutMe">Şikayet Sil</button>
+                               
+                           </div>
+                          
+                       </div>
+                   </div> 
+               </div>
+       
+               </div>
+       
+               </div>
+           </div>
+       
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div>
+           <div class="swiper-button-next1"></div>
+       </section>
+       
+       
+       </div>
+       
+       
+       <div class="profilecard">
+         
+         </div>
+       
+         
+         <div class="şikayet"> 
+             <div class="numbers"> 
+                 <!-- Kullanıcıdan bilgi almak için bir form oluşturun -->
+       <form id="myForm">
+       <!-- Kullanıcının girdiği bilgileri almak için input elementleri oluşturun -->
+       <label for="email" class="yazii">Lütfen E-mail adresinizi Giriniz:</label><br>
+       <input type="text" id="email" name="email" placeholder=" E-mail "><br>
+       <label for="name"  class="yazii">Lütfen  firma İsmini Giriniz:</label><br>
+       <input type="text" id="name" name="name" placeholder="firma"><br>
+       
+       <label for="marka" class="yazii">Lütfen Şikayetinizi Giriniz:</label><br>
+       <input type="text" id="marka" name="marka"  placeholder="Şikayet:" style="width: 350px; height: 85px;"><br>
+       
+       <br>
+       <!-- Formun gönderilmesi için bir submit düğmesi oluşturun -->
+       <input type="submit" value="Gönder" class="contact-btn">
+       </form>      
+             </div>
+       
+             <div id="list">
+               <!-- Buraya bilgiler listelenecek -->
+               <p>----------ŞİKAYETLER----------</p>
+             </div>
+         </div>
+         
+       
+       
+       
+       
+       
+               <script>
+                 // Formun submit düğmesine tıklandığında çalışacak fonksiyonu tanımlayın
+                 document.getElementById("myForm").onsubmit = function() {
+                   // Kullanıcıdan aldığınız bilgileri alın
+                   var email = document.getElementById("email").value;
+                   var name = document.getElementById("name").value;
+                   var marka = document.getElementById("marka").value;
+                   
+                   // Aldığınız bilgileri listeleyeceğiniz div'e ekleyin
+                   var listDiv = document.getElementById("list");
+                   listDiv.innerHTML += "<p> " + email + "</p>";
+                   listDiv.innerHTML += "<p> " + name + "</p>";
+                   listDiv.innerHTML += "<p>Şikayet: " + marka + "</p>";
+                   listDiv.innerHTML += "<p> " +"---------*****--------"+ "</p>";
+                   listDiv.innerHTML += "<p> " +"--"+ "</p>";
+                   // Formun submit edilmesini engelleyin
+                   return false;
+                 }
+       
+       
+       
+       
+       
+       
+                 var swiper = new Swiper(".customSwiper", {
+                       slidesPerView: 5,
+                       spaceBetween: 30,
+                       sliderPerGroup: 5,
+                       loop: true,
+                       loopFillGroupWithBlank: true,
+                       pagination: {
+                           el: ".swiper-pagination",
+                           clickable: true
+                       },
+                       navigation: {
+                           nextEl: ".swiper-button-next",
+                           prevEl: ".swiper-button-prev"
+                       }
+                   });
+       
+       
+       
+       
+                   $('.aboutMe').click(function() {
+           //aboutMe aslinda sikayeti sil but
+           $(this).parent().parent().parent().hide(1000);
+         
+         });
+       
+               </script>
+          
+          <footer class="bg-dark p-3 w-100">
+            <div class="container w-100">
+               <ul class="">
+                   <li footerli><a class="footerA" href="#">Hakkımızda</a></li>
+                   <li footerli><a  class="footerA" href="#">iletişim </a></li>
+                   <li footerli><a  class="footerA" href="#"> sık sorular</a></li>
+                   <li footerli><a  class="footerA" href="#">cevaplar</a></li>
+               </ul>
+               <div class="w-100 text-center"><span class="text-white ">2022 tüm hakları saklıdır</span></div>
+            </div>
+       </footer> 
+           
+       </body>
+       </html>

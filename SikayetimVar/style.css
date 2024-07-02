@@ -1,0 +1,225 @@
+
+.girisyap{
+    margin: auto;
+}
+.girisYapSection{
+   background-image: url(kkk.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 700px;
+    margin-top: -8px;
+}
+.girisyapForm{
+    position: relative;
+    top: 50px;
+}
+.navbar{
+    color: blanchedalmond;
+}
+.kayitolsection{
+    background-image: url(kkk.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 1000px;
+    margin-top: -8px;
+}
+.arkaplan{
+    background-image: url(kkk.jpg);
+    background-size: cover ;
+    background-position: center center;
+    width: 800%;
+    min-height: 1000px;
+    margin-top: -8px;
+}
+#bx{
+    margin-top: 50px;
+}
+a {
+    background-color: aqua;
+}
+.sectionindex{
+    background:url(kkk.jpg) ;
+    margin-top: -8px;
+}
+.resim {
+    width: 100%;
+    height: 300px;
+    background-size:cover ;
+    background-position: center center;
+}
+.footerA{
+    color: white;
+    text-decoration: none;
+}
+.footerli{
+    list-style-type: none;
+    
+}
+.hakkimizdasosyal{
+    list-style-type: none;
+     float: left;
+    
+   
+}
+.sectionsikayetekle{
+    background-image: url(kkk.jpg);
+}
+
+#face{
+    
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+}
+#twt{
+   
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+}
+#yotu{
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+}
+#inst{
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+}
+.sectioniletisim{
+background-image: url(kkk.jpg);
+    margin-top: -8px;
+    
+    min-height: 650px;
+}
+.iletisimform{
+    position: relative;
+    top: 30px;
+}
+#sikayetFormu {
+
+    width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  
+  #sikayetFormu label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #sikayetFormu input[type="text"],
+  #sikayetFormu textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #sikayetFormu input[type="button"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #sikayetFormu input[type="button"]:hover {
+    background-color: #45a049;
+  }
+  #sikayetKutucuk {
+    width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  .sectionsikayetekle{
+    
+    margin-top: -8px;
+   
+  }
+  #sorun{
+      color:white;
+  }
+  .hakkimizdaresim{
+    height: 300px;
+  }
+  .bg{
+    margin-top: -8px;
+    background-image: url(kkk.jpg);
+  }
+  h3{ 
+    font-size:14px;
+    font-style:normal;
+    font-family: 'Open Sans', sans-serif;
+    color:#000;
+    }
+    form#bilgiFormu {
+        background-color: burlywood;
+        color: #000000;
+        margin-top: -8px;
+      }
+      input, textarea {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+      }
+      button {
+        background-color: #4caf50;
+        color: #ffffff;
+        font-size: 16px;
+      }
+      #bilgiFormu {
+        width: 500px;
+        margin: auto;
+        border: 1px solid gray;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+      
+      #bilgiFormu label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      #bilgiFormu input, #bilgiFormu textarea, #bilgiFormu select {
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      #bilgiFormu input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      #bilgiFormu input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      .ekle{
+        background-image: url(kkk.jpg);
+      }
+      
+      
